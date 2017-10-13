@@ -1,7 +1,7 @@
 package prototype
 
 var defaultPrototypes = []*SpecificationSchema{
-	&SpecificationSchema{
+	{
 		APIVersion: "0.1",
 		Name:       "io.ksonnet.pkg.namespace",
 		Params: ParamSchemas{
@@ -41,7 +41,7 @@ namespace.`,
 			},
 		},
 	},
-	&SpecificationSchema{
+	{
 		APIVersion: "0.1",
 		Name:       "io.ksonnet.pkg.single-port-service",
 		Params: ParamSchemas{
@@ -108,7 +108,7 @@ will typically look something like:
 			},
 		},
 	},
-	&SpecificationSchema{
+	{
 		APIVersion: "0.1",
 		Name:       "io.ksonnet.pkg.deployment-exposed-with-service",
 		Params: ParamSchemas{
@@ -240,7 +240,7 @@ to 'targetLabelSelector', at 'targetPort'.`,
 			},
 		},
 	},
-	&SpecificationSchema{
+	{
 		APIVersion: "0.1",
 		Name:       "io.ksonnet.pkg.configMap",
 		Params: ParamSchemas{
@@ -277,7 +277,7 @@ to 'targetLabelSelector', at 'targetPort'.`,
 			},
 		},
 	},
-	&SpecificationSchema{
+	{
 		APIVersion: "0.1",
 		Name:       "io.ksonnet.pkg.single-port-deployment",
 		Params: ParamSchemas{

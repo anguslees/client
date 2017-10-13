@@ -299,7 +299,7 @@ func replace(jsonnet string, imports []ast.Import) string {
 			lines[lineStart-1] = lines[lineStart-1][:colStart-1] + param
 		} else {
 			line := lines[lineStart-1]
-			lines[lineStart-1] = line[:colStart-1] + param + line[colEnd:len(line)]
+			lines[lineStart-1] = line[:colStart-1] + param + line[colEnd:]
 		}
 	}
 
